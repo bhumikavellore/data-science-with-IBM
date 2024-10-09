@@ -13,5 +13,4 @@ Next, we will build an interactive dashboard that allows us to analyze launch re
 
 Finally, we will use machine learning techniques to build a predictive model. This model will be trained using historical data on Falcon 9 first stage landings. We will use algorithms such as Support Vector Machine (SVM), Classification Trees, and Logistic Regression. Once the model is trained, we will evaluate its performance using separate test data to select the model that best predicts the success of the Falcon 9 first stage landing.
 
-## Project PowerPoint
-https://drive.google.com/file/d/1JYFa1lO6QZb2R-6n-ICvZx5s-nKClv2b/view?usp=drive_link
+
