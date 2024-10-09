@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_849fd16f076df762d8902a7e96b54d3b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_849fd16f076df762d8902a7e96b54d3b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_849fd16f076df762d8902a7e96b54d3b = L.map(
+                "map_849fd16f076df762d8902a7e96b54d3b",
+                {
+                    center: [27.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bf2002383c01045748bd7e04535fe702 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bf2002383c01045748bd7e04535fe702.addTo(map_849fd16f076df762d8902a7e96b54d3b);
+        
+    
+            var marker_0b98abeba88469455a8aa65d5ec4ba34 = L.marker(
+                [28.5623, -80.5774],
+                {}
+            ).addTo(map_849fd16f076df762d8902a7e96b54d3b);
+        
+    
+            var icon_9b3190ed6da4cf96ce9a8aee0cebd795 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b98abeba88469455a8aa65d5ec4ba34.setIcon(icon_9b3190ed6da4cf96ce9a8aee0cebd795);
+        
+    
+        var popup_656fe1b68ac5cb8089b723c81df4c247 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8025876a2e3bd1ad063c6f60553a5fe = $(`<div id="html_e8025876a2e3bd1ad063c6f60553a5fe" style="width: 100.0%; height: 100.0%;">Cape Canaveral LC-40 - Success</div>`)[0];
+                popup_656fe1b68ac5cb8089b723c81df4c247.setContent(html_e8025876a2e3bd1ad063c6f60553a5fe);
+            
+        
+
+        marker_0b98abeba88469455a8aa65d5ec4ba34.bindPopup(popup_656fe1b68ac5cb8089b723c81df4c247)
+        ;
+
+        
+    
+    
+            var marker_616d3af1ccac21f48d68e4612b647427 = L.marker(
+                [28.5721, -80.648],
+                {}
+            ).addTo(map_849fd16f076df762d8902a7e96b54d3b);
+        
+    
+            var icon_e0ae50861f52d1fb63ef34be3531b42a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_616d3af1ccac21f48d68e4612b647427.setIcon(icon_e0ae50861f52d1fb63ef34be3531b42a);
+        
+    
+        var popup_3e33437fc906407d6cecdf5ea30a3eb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef86fd7b8eea9e37491be9b16a8c51ab = $(`<div id="html_ef86fd7b8eea9e37491be9b16a8c51ab" style="width: 100.0%; height: 100.0%;">Cape Canaveral LC-39A - Failure</div>`)[0];
+                popup_3e33437fc906407d6cecdf5ea30a3eb5.setContent(html_ef86fd7b8eea9e37491be9b16a8c51ab);
+            
+        
+
+        marker_616d3af1ccac21f48d68e4612b647427.bindPopup(popup_3e33437fc906407d6cecdf5ea30a3eb5)
+        ;
+
+        
+    
+    
+            var marker_50f0332040a245990c74de40a6f586bc = L.marker(
+                [34.6324, -120.6105],
+                {}
+            ).addTo(map_849fd16f076df762d8902a7e96b54d3b);
+        
+    
+            var icon_6e81fa6c8f432a9fb091e0893f5c6a9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_50f0332040a245990c74de40a6f586bc.setIcon(icon_6e81fa6c8f432a9fb091e0893f5c6a9a);
+        
+    
+        var popup_a0f9449d0614e8425e84df7a345738d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_106e5f34e3b1a8104dd78a2cfecf55f4 = $(`<div id="html_106e5f34e3b1a8104dd78a2cfecf55f4" style="width: 100.0%; height: 100.0%;">Vandenberg SLC-4E - Success</div>`)[0];
+                popup_a0f9449d0614e8425e84df7a345738d0.setContent(html_106e5f34e3b1a8104dd78a2cfecf55f4);
+            
+        
+
+        marker_50f0332040a245990c74de40a6f586bc.bindPopup(popup_a0f9449d0614e8425e84df7a345738d0)
+        ;
+
+        
+    
+    
+            var marker_405b1a57828d28c9eb5d4753fb7ff272 = L.marker(
+                [25.9978, -97.156],
+                {}
+            ).addTo(map_849fd16f076df762d8902a7e96b54d3b);
+        
+    
+            var icon_6499d8123cf6ae5bc1737b02f967378f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_405b1a57828d28c9eb5d4753fb7ff272.setIcon(icon_6499d8123cf6ae5bc1737b02f967378f);
+        
+    
+        var popup_671f2b4012414ed58e4c050794ff6b18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29a1e9dae47df2052eb2b87bbfa8d629 = $(`<div id="html_29a1e9dae47df2052eb2b87bbfa8d629" style="width: 100.0%; height: 100.0%;">Boca Chica Starbase - Success</div>`)[0];
+                popup_671f2b4012414ed58e4c050794ff6b18.setContent(html_29a1e9dae47df2052eb2b87bbfa8d629);
+            
+        
+
+        marker_405b1a57828d28c9eb5d4753fb7ff272.bindPopup(popup_671f2b4012414ed58e4c050794ff6b18)
+        ;
+
+        
+    
+    
+            var marker_fc0da6bdeaa5d2aa8e75e21ef75878ca = L.marker(
+                [25.9978, -97.156],
+                {}
+            ).addTo(map_849fd16f076df762d8902a7e96b54d3b);
+        
+    
+            var icon_fe2b43ca4e7eed6b32b9ab2271bddb13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc0da6bdeaa5d2aa8e75e21ef75878ca.setIcon(icon_fe2b43ca4e7eed6b32b9ab2271bddb13);
+        
+    
+        var popup_3588b9f31e6bbbacca7e5d4a5411668c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6223e045a8a82b3b523b33ace9c220ce = $(`<div id="html_6223e045a8a82b3b523b33ace9c220ce" style="width: 100.0%; height: 100.0%;">Boca Chica Starbase - Failure</div>`)[0];
+                popup_3588b9f31e6bbbacca7e5d4a5411668c.setContent(html_6223e045a8a82b3b523b33ace9c220ce);
+            
+        
+
+        marker_fc0da6bdeaa5d2aa8e75e21ef75878ca.bindPopup(popup_3588b9f31e6bbbacca7e5d4a5411668c)
+        ;
+
+        
+    
+</script>
+</html>
